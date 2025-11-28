@@ -20,8 +20,8 @@ WarmWhitePattern warmWhitePattern;
 CandyCanePattern candyCanePattern;
 
 Pattern* patterns[] = {
-  &twinklePattern,
   &holidayColorsPattern,
+  &twinklePattern,
   &warmWhitePattern,
   &candyCanePattern
 };
@@ -41,10 +41,10 @@ void setup() {
   
   FastLED.setBrightness(System::kGlobalBrightness);
   FastLED.setMaxPowerInMilliWatts(System::kMaxPowerMw);
-  FastLED.show();
-  
+
   // Initialize the first pattern
   patterns[currentPatternIndex]->start();
+  FastLED.show();  
 }
 
 void loop() {

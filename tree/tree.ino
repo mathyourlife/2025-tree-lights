@@ -7,6 +7,7 @@
 #include "HolidayColorsPattern.h"
 #include "WarmWhitePattern.h"
 #include "CandyCanePattern.h"
+#include "PixiePattern.h"
 
 CRGB leds[System::kNumLeds];
 
@@ -18,8 +19,10 @@ TwinklePattern twinklePattern;
 HolidayColorsPattern holidayColorsPattern;
 WarmWhitePattern warmWhitePattern;
 CandyCanePattern candyCanePattern;
+PixiePattern pixiePattern;
 
 Pattern* patterns[] = {
+  &pixiePattern,
   &twinklePattern,
   &holidayColorsPattern,
   &warmWhitePattern,

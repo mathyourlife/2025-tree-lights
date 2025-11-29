@@ -20,8 +20,8 @@ WarmWhitePattern warmWhitePattern;
 CandyCanePattern candyCanePattern;
 
 Pattern* patterns[] = {
-  &holidayColorsPattern,
   &twinklePattern,
+  &holidayColorsPattern,
   &warmWhitePattern,
   &candyCanePattern
 };
